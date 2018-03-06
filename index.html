@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Color Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+
+    <div id="header">
+            <h1>Guess The Color
+                <br>
+                <span id="color-display">rgb(255, 255, 255)</span>
+            </h1>
+    </div>
+    <div id="divider">
+        <button id="reset">New Game</button>
+        <span class="message-notif"></span>
+        <button class="buttonMode">Easy</button>
+        <button class="buttonMode selected">Hard</button>
+    </div>
+
+    <div id="score-area">
+        <h3>Score : <span class="score-text">0</span></h3>
+    </div>
+
+
+    <div id="container-square">
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+    </div>
+
+    <div id="hint-box">
+        <p>Hint</p>
+        <table>
+            <tr>
+                <td><div class="box-red"></div></td>
+                <td>RGB(255 , 0, 0)</td>
+            </tr>
+            <tr>
+                <td><div class="box-green"></div></td>
+                <td>RGB(0 , 255, 0)</td>
+            </tr>
+            <tr>
+                <td><div class="box-blue"></div></td>
+                <td>RGB(0 , 0, 255)</td>
+            </tr>
+        </table>
+       
+    </div>
+
+    <!-- CORRECT POPUP -->
+
+    <div id="message-box">
+        <h1 class="message-text"></h1>
+    </div>
+
+    <div id="footer">
+        <p>Color Game version 1.1</p>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>

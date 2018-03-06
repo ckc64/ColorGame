@@ -1,0 +1,141 @@
+body{
+    background-color: #232323;
+    margin:0;
+    padding:0;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    color:#fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 20px 0;
+    margin: 0;
+    letter-spacing: 0.8px;
+}
+
+#header{
+    background-color: steelblue;
+}
+
+#score-area{
+    width:20%;
+    float:left;
+    margin-left:1%;
+    color:#fff;
+}
+
+#score-area h3{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#color-display{
+    font-size:140%;
+}
+
+#divider{
+    background-color: #fff;
+    color:#232323;
+    text-align: center;
+}
+
+#divider .message-notif{
+    width: 20%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#container-square{
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.squares{
+    float: left;
+    background-color: purple;
+    width:30%;
+    padding-bottom: 30%;
+    margin:1.66%;
+    border-radius: 15%;
+    transition: background 0.3s;
+}
+
+button{
+    background-color: #fff;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    height: 100%;;
+    font-size:inherit;
+    line-height: 1.1;
+    letter-spacing: 1.3px;
+}
+
+.selected{
+    background-color:steelblue;
+    color:#fff;
+}
+
+button:hover{
+    color:#fff;
+    background-color: steelblue;
+}
+
+#hint-box{
+    position: absolute;
+   width:200px;
+   height: 100px;
+    color:#fff;
+    bottom:4%;
+    left:1%;
+}
+#hint-box p{
+    margin:0;
+}
+.box-red{
+    width:20px;
+    height:20px;
+    background-color: red;
+}
+
+.box-green{
+    width:20px;
+    height:20px;
+    background-color: green;
+}
+
+.box-blue{
+    width:20px;
+    height:20px;
+    background-color:blue;
+}
+
+#message-box{
+    min-width:100%;
+    margin: auto 0;
+    background-color:rgba(255, 255, 255, 0.1);
+    position: fixed;
+    bottom:25%;
+    z-index: 0;
+    transition: background 5s;
+}
+
+#message-box h1{
+    color:#fff;
+    text-align: center;
+    font-size:500%;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    right:15px;
+    color:#fff;
+}
