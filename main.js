@@ -80,11 +80,11 @@ function compareColors(colorToGuess,pickedColor){
         messageBox.style.display="block";
         header.style.backgroundColor=pickedColor;
 
-        if(colors.length===3){
-            scoreResult+=50;
-        }else{
-            scoreResult+=100;
-        }
+            if(colors.length===3){
+                scoreResult+=10;
+            }else{
+                scoreResult+=25;
+            }
 
         removeMessageBox();
         score.textContent=scoreResult;
@@ -93,12 +93,17 @@ function compareColors(colorToGuess,pickedColor){
 
     }else{
        
-        messageBoxText.textContent="WRONG !"
+        messageBoxText.textContent="WRONG !";
         messageBox.style.display="block";
+        resetColors(colorToGuess);
         removeMessageBox();
         scoreResult=0;
         score.textContent=scoreResult;
     }
+}
+
+function showAnswer(){
+
 }
 
 function removeMessageBox(){
